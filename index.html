@@ -25,24 +25,26 @@
           >
           <ul class="nav-list list">
             <li class="item">
-              <a class="link current" href="./index.html">Studio</a>
+              <a class="nav-link link current" href="./index.html">Studio</a>
             </li>
             <li class="item">
-              <a class="link" href="./portfolio.html">Portfolio</a>
+              <a class="nav-link link" href="./portfolio.html">Portfolio</a>
             </li>
             <li class="item">
-              <a class="link" href="./index.html">Contacts</a>
+              <a class="nav-link link" href="./index.html">Contacts</a>
             </li>
           </ul>
         </nav>
         <ul class="contacts-list list">
           <li class="item">
-            <a class="link" href="mailto:info@devstudio.com"
+            <a class="contacts-link link" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
           </li>
           <li class="item">
-            <a class="link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+            <a class="contacts-link link" href="tel:+110001111111"
+              >+11 (000) 111-11-11</a
+            >
           </li>
         </ul>
       </div>
@@ -52,7 +54,9 @@
       <section class="hero section">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button class="hero-btn" type="button">Order Service</button>
+          <button type="button" class="hero-btn" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
 
@@ -433,5 +437,17 @@
         </div>
       </div>
     </footer>
+
+    <!-- modal window -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-btn" data-modal-close>
+          <svg class="close-icon">
+            <use href="./images/icons.svg#close-icon"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
